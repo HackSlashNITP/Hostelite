@@ -113,10 +113,12 @@ class _MarkingExitState extends State<MarkingExit> {
               image: DecorationImage(
                 image: AssetImage('assets/second_page/Group 33694.png'),
                 fit: BoxFit.contain,
+                alignment: Alignment.centerLeft,
               ),
             ),
+            margin: EdgeInsets.only(left: 23), // Add left margin to the container
           ),
-          BackdropFilter(
+      BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
             child: Container(
               color: Colors.white.withOpacity(0.0),
