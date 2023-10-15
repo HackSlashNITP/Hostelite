@@ -67,23 +67,26 @@ class _EditProfileStudentState extends State<EditProfileStudent> {
                       child: Container(
                         child: Padding(
                           padding: EdgeInsets.symmetric(
-                              horizontal: 30.w, vertical: 40.h),
+                              horizontal: 20.w, vertical: 20.h),
                           child: Column(children: [
                             Row(children: [
-                              IconButton(
-                                icon: Icon(Icons.arrow_back),
-                                onPressed: () => Navigator.of(context).pop(),
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(0,0,20,0),
+                                child: IconButton(
+                                  icon: Icon(Icons.arrow_back),
+                                  onPressed: () => Navigator.of(context).pop(),
+                                ),
                               ),
                               Text(
                                 'Edit Profile',
                                 style: TextStyle(
-                                    fontSize: 28.sp,
+                                    fontSize: 26.sp,
                                     color: Color(0xff747475),
                                     fontWeight: FontWeight.w700),
                               ),
                             ]),
                             SizedBox(
-                              height: 40.h,
+                              height: 15.h,
                             ),
                             GestureDetector(
                               onTap: () {
@@ -147,7 +150,7 @@ class _EditProfileStudentState extends State<EditProfileStudent> {
                                   }),
                             ),
                             SizedBox(
-                              height: 35.h,
+                              height: 25.h,
                             ),
                             TextFormField(
                               controller: username,
@@ -156,18 +159,17 @@ class _EditProfileStudentState extends State<EditProfileStudent> {
                                 labelText: 'Name',
                                 fillColor: Colors.white,
                                 filled: true,
-                                enabledBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(20.r),
+                                enabledBorder: UnderlineInputBorder(
                                     borderSide: BorderSide(
                                         color: Colors.grey, width: 1.w)),
                                 focusedBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(20.r),
+                                    borderRadius: BorderRadius.circular(10.r),
                                     borderSide: BorderSide(
                                         color: Colors.cyan, width: 1.w)),
                               ),
                             ),
                             SizedBox(
-                              height: 28.h,
+                              height: 25.h,
                             ),
                             TextFormField(
                               controller: email,
@@ -176,18 +178,17 @@ class _EditProfileStudentState extends State<EditProfileStudent> {
                                 labelText: 'Email',
                                 fillColor: Colors.white,
                                 filled: true,
-                                enabledBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(20.r),
+                                enabledBorder: UnderlineInputBorder(
                                     borderSide: BorderSide(
                                         color: Colors.grey, width: 1.w)),
                                 focusedBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(20.r),
+                                    borderRadius: BorderRadius.circular(10.r),
                                     borderSide: BorderSide(
                                         color: Colors.cyan, width: 1.w)),
                               ),
                             ),
                             SizedBox(
-                              height: 28.h,
+                              height: 25.h,
                             ),
                             TextFormField(
                               controller: mobileNumber,
@@ -196,18 +197,17 @@ class _EditProfileStudentState extends State<EditProfileStudent> {
                                 labelText: 'Mobile number',
                                 fillColor: Colors.white,
                                 filled: true,
-                                enabledBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(20.r),
+                                enabledBorder: UnderlineInputBorder(
                                     borderSide: BorderSide(
                                         color: Colors.grey, width: 1.w)),
                                 focusedBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(20.r),
+                                    borderRadius: BorderRadius.circular(10.r),
                                     borderSide: BorderSide(
                                         color: Colors.cyan, width: 1.w)),
                               ),
                             ),
                             SizedBox(
-                              height: 28.h,
+                              height: 25.h,
                             ),
                             TextFormField(
                               controller: roomNumber,
@@ -216,18 +216,17 @@ class _EditProfileStudentState extends State<EditProfileStudent> {
                                 labelText: 'Room number',
                                 fillColor: Colors.white,
                                 filled: true,
-                                enabledBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(20.r),
+                                enabledBorder: UnderlineInputBorder(
                                     borderSide: BorderSide(
                                         color: Colors.grey, width: 1.w)),
                                 focusedBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(20.r),
+                                    borderRadius: BorderRadius.circular(10.r),
                                     borderSide: BorderSide(
                                         color: Colors.cyan, width: 1.w)),
                               ),
                             ),
                             SizedBox(
-                              height: 28.h,
+                              height: 25.h,
                             ),
                             TextFormField(
                               controller: rollNumber,
@@ -236,17 +235,16 @@ class _EditProfileStudentState extends State<EditProfileStudent> {
                                 labelText: 'Roll number',
                                 fillColor: Colors.white,
                                 filled: true,
-                                enabledBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(20.r),
+                                enabledBorder: UnderlineInputBorder(
                                     borderSide: BorderSide(
                                         color: Colors.grey, width: 1.w)),
                                 focusedBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(20.r),
+                                    borderRadius: BorderRadius.circular(10.r),
                                     borderSide: BorderSide(
                                         color: Colors.cyan, width: 1.w)),
                               ),
                             ),
-                            SizedBox(height: 50.h),
+                            SizedBox(height: 35.h),
                             Container(
                               width: 146.w,
                               height: 53.h,
